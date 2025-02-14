@@ -210,16 +210,17 @@ body {
     }
 
     .envelope {
-        width: 160px;
-        height: 110px;
+        width: 180px;
+        height: 130px;
     }
 
     .flap {
         height: 55px;
+        width: 160px;
     }
 
     .letter {
-        width: 130px;
+        width: 180px;
         height: 85px;
         font-size: 0.8rem;
     }
