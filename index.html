@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Love Letters</title>
+    <link rel="stylesheet" href="bodys.css">
+</head>
+<body>
+    <div class="header">
+        <h1>to my ela</h1>
+        <img src="1682775218731.png" alt="Daisy Flower" class="header-img">
+
+    </div>
+
+    <div class="modal" id="imageModal"gi>
+        <span class="close-btn" onclick="closeModal()">×</span>
+        <img id="modalImage" src="" alt="Expanded View">
+    </div>
+    
+    
+    <div class="container">
+        <!-- Envelope 1 -->
+        <div class="envelope" onclick="openLetter(this)" onmouseover="playMusic()">
+            <div class="flap"></div>
+            <div class="letter">
+                <h1>To My Love 💌</h1>
+                <p>Every moment with you feels like a dream. You make my world brighter, and I'm so grateful to have you in my life. Happy Valentine's Day!</p>
+                <p>Forever yours,<br>[Your Name]</p>
+            </div>
+        </div>
+
+        <!-- Envelope 2 -->
+        <div class="envelope" onclick="openLetter(this)">
+            <div class="flap"></div>
+            <div class="letter">
+                <h1>4 pics in 2024 📸</h1>
+                <div class="gallery">
+                    <img src="IMG_20240103_231653_179.jpg" alt="Our Photo 1" onclick="openModal(this.src)">
+                    <img src="IMG_20240107_220026_786.jpg" alt="Our Photo 2" onclick="openModal(this.src)">
+                    <img src="IMG_20240620_190316_024.jpg" alt="Our Photo 3" onclick="openModal(this.src)">
+                    <img src="Messenger_creation_A92EEA01-C484-4E85-86E0-FE3E5321C37D.jpeg" alt="Our Photo 4" onclick="openModal(this.src)">
+                </div>
+            </div>
+        </div>
+
+        <!-- Envelope 3 -->
+        <div class="envelope" onclick="openLetter(this)">
+            <div class="flap"></div>
+            <div class="letter">
+                <h1>Our Future 🌟</h1>
+                <p>I can't wait to create more beautiful memories with you. Here's to a lifetime of love, laughter, and adventures together!</p>
+                <p>With all my love,<br>[Your Name]</p>
+            </div>
+        </div>
+    </div>
+    
+    <audio id="backgroundMusic" loop>
+        <source src="I Will (Remastered 2009).mp3" type="audio/mpeg">
+    
+    </audio>
+    <script src="js hvd.js"></script>
+    <script>
+        function playMusic() {
+            const backgroundMusic = document.getElementById('backgroundMusic');
+            if (backgroundMusic.paused) {
+                backgroundMusic.play().catch(error => {
+                    console.log("Music playback failed. Please interact with the page first.");
+                });
+            }
+        }
+    </script>
+</body>
+</html>
